@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content=" This Is Description For Project 7" />
+  <title>four project work En_2</title>
+  <!--Bootstrap File-->
+  <link rel="stylesheet" href="./styles/bootstrap.min.css?3213" />
+  <!-- Main Css File -->
+  <link rel="stylesheet" href="./styles/main.css?12sad" />
+  <!--Icons Library-->
+  <link rel="stylesheet" href="./styles/all.min.css?qweqw" />
+  <script src="./ckeditor5-build-classic-41.4.2/ckeditor5-build-classic/ckeditor.js"></script>
+  <script src="./node_modules/sortablejs/Sortable.js"></script>
+</head>
+
+<body>
+  <div class="container-game w-100 h-100 overflow-hidden">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-eye"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-floppy-disk"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-user-tie"></i></a>
+          </li>
+        </ul>
+        <div class="navbar-icon  mr-auto mt-2 mt-lg-0">
+          <div category="3" class="category-icon-container float-left" title="المادة الدراسية">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <h1 class="lesson-title-container float-left" title="الدرس">Math</h1>
+          <div class="separateing-line-container float-left"></div>
+          <label class="level-title-container float-left" title="الصف">الصف الأول</label>
+        </div>
+
+      </div>
+    </nav>
+    <section class="game">
+      <section id="game-body" class="game-body clearfix">
+        <a class="arrow-next">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <div id="canvas"
+          style="position:absolute;width: 100%;height: 100%;left: 0;top:0;display: block;overflow: hidden;">
+          <iframe id="iframe" allowfullscreen="" class="lesson-viewer-iframe" style="height: 100%; width: 100%;"></iframe>
+          <!-- <div class="alert">
+            <h1>no game<i class="fas fa-gamepad"></i></h1>
+          </div> -->
+        </div>
+        <a class="arrow-prev">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+        <a class="bars">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </section>
+      <section id="leftsidebar" class="slider sidebar lesson-builder">
+        <div class="vertical-slider-viewer">
+          <input type="hidden" id="lessonid" value="1422">
+          <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100vh;">
+            <ul class="hide-bullets  bulider jq-bulider ui-sortable" id="lesson_item_container"
+              style="overflow: hidden; width: auto; height: 100vh;">
+              <li draggable="true" class="col-sm-12 col-md-12 col-lg-12 jq_media_item ui-sortable-handle selected"
+                media_agree="12533" media_type="all" media_cat="3" media_id="12533"
+                src-attr="https://kh1aled.github.io/first-project-workAR/" category_ar="الرياضيات" category_en="Math"
+                title_ar="قياس الزوايا" title_en="Angles measurement" type="all">
+                <div class="item-header">
+                  <div class="item-category" title="المادة الدراسية">
+                    الرياضيات - قياس الزوايا <span class="counter"></span>
+                  </div>
+
+                  <div class="item-delete float-right" title="حذف">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+
+                  <div class="jq_moveitem float-right icon-sorting col-main-color" title="lang.move">
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                  </div>
+                </div>
+                <a class="thumbnail jq_media_title" id="carousel-selector-1" title="قياس الزوايا">
+                  <img src="https://www.manhal.com/platform/media/12533/thumbnail_small.jpg">
+                </a>
+              </li>
+              <li draggable="true" class="col-sm-12 col-md-12 col-lg-12 jq_media_item ui-sortable-handle"
+                media_agree="12533" media_type="all" media_cat="3" media_id="12533"
+                src-attr="https://kh1aled.github.io/second-project-workAr/" category_ar="الرياضيات" category_en="Math"
+                title_ar="قياس الزوايا" title_en="Angles measurement" type="all">
+                <div class="item-header">
+                  <div class="item-category" title="المادة الدراسية">
+                    الرياضيات - قياس الزوايا <span class="counter"></span>
+                  </div>
+                  <div class="item-delete float-right" title="حذف">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+
+                  <div class="jq_moveitem float-right icon-sorting col-main-color" title="lang.move">
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                  </div>
+                </div>
+                <a class="thumbnail jq_media_title" id="carousel-selector-1" title="قياس الزوايا">
+                  <img src="https://www.manhal.com/platform/media/12533/thumbnail_small.jpg">
+                </a>
+              </li>
+              <li draggable="true" class="col-sm-12 col-md-12 col-lg-12 jq_media_item ui-sortable-handle"
+                media_agree="12533" media_type="all" media_cat="3" media_id="12533"
+                src-attr="https://kh1aled.github.io/three-project-workAr/" category_ar="الرياضيات" category_en="Math"
+                title_ar="قياس الزوايا" title_en="Angles measurement" type="all">
+                <div class="item-header">
+                  <div class="item-category" title="المادة الدراسية">
+                    الرياضيات - قياس الزوايا <span class="counter"></span>
+                  </div>
+                  <div class="item-delete float-right" title="حذف">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+
+                  <div class="jq_moveitem float-right icon-sorting col-main-color" title="lang.move">
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                  </div>
+                </div>
+                <a class="thumbnail jq_media_title" id="carousel-selector-1" title="قياس الزوايا">
+                  <img src="https://www.manhal.com/platform/media/12533/thumbnail_small.jpg">
+                </a>
+              </li>
+            </ul>
+            <div class="slimScrollBar"
+              style="background: rgba(0, 0, 0, 0.5); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 347.339px;">
+            </div>
+            <div class="slimScrollRail"
+              style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+            </div>
+          </div>
+        </div>
+        <div class="addlesson-viewer-container">
+          <a>
+            <h3>
+              إضافة
+            </h3>
+            <i class="icon"></i>
+          </a>
+        </div>
+      </section>
+      <div class="game-list-options">
+        <div class="header">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="body">
+          <div class="row clearfix select-media-type-container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="row m-t-20 card-content-view ">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 rich_text m-b-10">
+                  <div class="card" data-page="ckeditor">
+                    <div class="card-images">
+                      <div class="overlay"></div>
+                      <img src="https://sonono.manhal.com/images/default_thumb/selecttype/rich.png"
+                        title="محرر الصفحات">
+                    </div>
+                    <h5 class="card-title card-block mt-3 mb-3 text-center" style="cursor:pointer">محرر الصفحات</h5>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 btn_goto_upload_media_form_home m-b-10">
+                  <div class="card">
+                    <div class="card-images book-worksheet11">
+                      <div class="overlay"></div>
+                      <img src="https://sonono.manhal.com/images/default_thumb/selecttype/uploadadd.png"
+                        title="تحميل الوسائط">
+                    </div>
+                    <h5 class="card-title card-block mt-3 mb-3 text-center" style="cursor:pointer">تحميل الوسائط</h5>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  media_library m-b-10">
+                  <div class="card">
+                    <div class="card-images book-worksheet11">
+                      <div class="overlay"></div>
+                      <img src="https://sonono.manhal.com/images/default_thumb/selecttype/library.png"
+                        title="مكتبة الوسائط">
+                    </div>
+                    <h5 class="card-title card-block mt-3 mb-3 text-center" style="cursor:pointer">مكتبة الوسائط</h5>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 manhal_media m-b-10">
+                  <div class="card" data-page="games">
+                    <div class="card-images book-worksheet11">
+                      <div class="overlay"></div>
+                      <img src="https://sonono.manhal.com/images/default_thumb/selecttype/media.png"
+                        title="وسائط المنهل">
+                    </div>
+                    <h5 class="card-title card-block mt-3 mb-3 text-center" style="cursor:pointer">وسائط المنهل</h5>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="game-list">
+        <div class="header">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="body">
+          <div class="row dataTables_wrapper" data-select2-id="select2-data-64-x5dx">
+            <div class="col-lg-4 col-md-4 col-sm-6 m-b-10 float-left">
+              <form class="form-horizontal">
+                <div class="row clearfix">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group search-container-a m-0">
+                      <div class="form-line float-left w-100 position-relative">
+                        <input id="searchmedia" type="search" class="form-control input-sm" placeholder="بحث"
+                          aria-controls="DataTables_Table_0">
+                        <button id="btnSearchmedia"
+                          class="btn btn-primary btn-xs waves-effect float-left search-absolute" title="بحث"><i
+                            class="fa-solid fa-magnifying-glass icon-search"></i></button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 m-b-10 float-left " data-select2-id="select2-data-63-iq3f">
+              <div class="row filter-container m-0 position-relative h-100" data-select2-id="select2-data-62-m1ux">
+                <a class="btn btn-secondary filter-pup-btn">
+                  <i class="icon-filter2 pull-left fa-solid fa-filter"></i>
+                  <span class="filter-name pull-left">تصفية</span>
+                  <i class="caret float-left fa-solid fa-caret-down"></i>
+                </a>
+                <div id="filtermenu" class="dropdown-menu filter-menu" tabindex="1">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-b-10 float-left padding-0"
+                    data-select2-id="select2-data-61-acdz">
+                    <form class="form-horizontal" data-select2-id="select2-data-60-l9nz">
+                      <div class="row clearfix">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-control-label">
+                          <label class="filter-label col-manhalgreen ">النوع</label>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                          <div class="form-group flitter-form">
+                            <div class="form-line float-left">
+                              <select id="Type_media"
+                                class="form-control show-tick selsct-with-search select2-hidden-accessible"
+                                data-select2-id="select2-data-Type_media" tabindex="-1" aria-hidden="true">
+                                <option selected="" value="all" data-select2-id="select2-data-24-e41o">الكل
+                                </option>
+                                <option value="games" data-select2-id="select2-data-68-y0zn">الألعاب</option>
+                                <option value="interactive-worksheets" data-select2-id="select2-data-69-fpba">
+                                  أوراق عمل
+                                  التفاعلية</option>
+                                <option value="quiz" data-select2-id="select2-data-70-4r00">الاختبارات
+                                </option>
+                                <option value="worksheet" data-select2-id="select2-data-71-bvhy">أوراق العمل
+                                </option>
+                                <option value="sound" data-select2-id="select2-data-72-ocm2">الأصوات</option>
+                                <option value="video" data-select2-id="select2-data-73-0e0q">الفيديوهات
+                                </option>
+                                <option value="stories" data-select2-id="select2-data-74-i5xm">القصص</option>
+                                <option value="image" data-select2-id="select2-data-75-qsm4">صورة</option>
+                                <option value="poster" data-select2-id="select2-data-76-3btq">بوستر</option>
+                                <option value="flashcard" data-select2-id="select2-data-77-2nru">بطاقة تعليمية
+                                </option>
+                                <option value="thumb" data-select2-id="select2-data-78-46ov">صورة مصغرة
+                                </option>
+                                <option value="others" data-select2-id="select2-data-79-f669">اخرى</option>
+                              </select>
+                              <span class="select2-selection__arrow" role="presentation"><b class="col-manhalgreen1"
+                                  role="presentation"></b></span></span></span>
+                              <span class="dropdown-wrapper" aria-hidden="true"></span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-b-10 float-left padding-0">
+                            <form class="form-horizontal">
+                                <div class="row clearfix">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-control-label">
+                                        <label class="filter-label col-manhalgreen">المادة الدراسية</label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <div class="form-group flitter-form">
+
+                                            <div class="form-line float-left">
+                                                <select id="Categories_media" class="form-control show-tick selsct-with-search select2-hidden-accessible" data-select2-id="select2-data-Categories_media" tabindex="-1" aria-hidden="true">
+                                                    <option value="-1" data-select2-id="select2-data-36-4lbf">الكل</option>
+
+                                                                                                                                                                                                <option value="1">Science</option>
+                                                                                                                                                                                                                                                                    <option value="2">Math</option>
+                                                                                                                                                                                                                                                                    <option value="3">English</option>
+                                                                                                                                                                                                                                                                    <option value="4">Arabic</option>
+                                                                                                                                                                                                                                                                    <option value="6">Religon</option>
+                                                                                                                                                                                                                                                                    <option value="7">Computer</option>
+                                                                                                                                                                                                                                                                    <option value="8">French</option>
+                                                                                                                                                                                                                                                                    <option value="9">Arts</option>
+                                                                                                                                                                                                                                                                    <option value="10">Health</option>
+                                                                                                                                                                                                                                                                    <option value="11">Coloring</option>
+                                                                                                                        
+                                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-35-qk1o" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-Categories_media-container"><span class="select2-selection__rendered" id="select2-Categories_media-container" role="textbox" aria-readonly="true" title="الكل">الكل</span><span class="select2-selection__arrow" role="presentation"><b class="col-manhalgreen1" role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> -->
+                  <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-b-10 float-left padding-0">
+                            <form class="form-horizontal">
+                                <div class="row clearfix">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-control-label">
+                                        <label class="filter-label col-manhalgreen">العمر</label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <div class="form-group flitter-form">
+                                            <div class="form-line float-left">
+                                                <select att="-1" id="Grade_media" class="form-control show-tick selsct-with-search select2-hidden-accessible" data-select2-id="select2-data-Grade_media" tabindex="-1" aria-hidden="true">
+                                                                                                                        <option selected="" value="-1" data-select2-id="select2-data-51-3dou">الكل</option>
+                                                                                                                        <option value="0">Kindergarten</option>
+                                                                                                                        <option value="1">1</option>
+                                                                                                                        <option value="2">2</option>
+                                                                                                                        <option value="3">3</option>
+                                                                                                                        <option value="4">4</option>
+                                                                                                                        <option value="5">5</option>
+                                                                                                                        <option value="6">6</option>
+                                                                                                                        <option value="7">7</option>
+                                                                                                                        <option value="8">8</option>
+                                                                                                                        <option value="9">9</option>
+                                                                                                                        <option value="10">10</option>
+                                                                                                                        <option value="11">11</option>
+                                                                                                                        <option value="12">12</option>
+                                                                                                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-50-wihw" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-Grade_media-container"><span class="select2-selection__rendered" id="select2-Grade_media-container" role="textbox" aria-readonly="true" title="الكل">الكل</span><span class="select2-selection__arrow" role="presentation"><b class="col-manhalgreen1" role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-b-10 float-left padding-0">
+                            <form class="form-horizontal">
+                                <div class="row clearfix">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-control-label">
+                                        <label class="filter-label col-manhalgreen">المنشئ</label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                        <div class="form-group flitter-form">
+                                            <div class="form-line float-left">
+                                                                                                            <select class="form-control show-tick selsct-with-search select2-hidden-accessible" name="type_media" id="type_media" data-select2-id="select2-data-type_media" tabindex="-1" aria-hidden="true">
+                                                    <option value="2" selected="" data-select2-id="select2-data-55-8f3a">وسائطي</option>
+                                                    <option value="0">الكل</option>
+                                                    <option value="1"> عام</option>
+                                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-54-ocfe" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-type_media-container"><span class="select2-selection__rendered" id="select2-type_media-container" role="textbox" aria-readonly="true" title="وسائطي">وسائطي</span><span class="select2-selection__arrow" role="presentation"><b class="col-manhalgreen1" role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-6 float-left" style="display: none">
+              <form class="form-horizontal">
+                <div class="row clearfix">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 form-control-label">
+                    <label class="filter-label col-manhalgreen">وسائط </label>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <div class="form-group flitter-form">
+                      <div class="form-line float-left">
+                        <select id="Media_from"
+                          class="form-control show-tick selsct-with-search select2-hidden-accessible"
+                          data-select2-id="select2-data-Media_from" tabindex="-1" aria-hidden="true">
+                          <option value="2" selected="" data-select2-id="select2-data-58-zpws">المنهل</option>
+                          <option value="1">وسائط المدرسة</option>
+
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                          data-select2-id="select2-data-57-mdwm" style="width: 100%;"><span class="selection"><span
+                              class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                              aria-expanded="false" tabindex="0" aria-disabled="false"
+                              aria-labelledby="select2-Media_from-container"><span class="select2-selection__rendered"
+                                id="select2-Media_from-container" role="textbox" aria-readonly="true"
+                                title="المنهل">المنهل</span><span class="select2-selection__arrow"
+                                role="presentation"><b class="col-manhalgreen1"
+                                  role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                            aria-hidden="true"></span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+
+          <div class="row m-t-20 card-content-view mt-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-item-container">
+
+              <div class="card" type="all" src-attr="https://kh1aled.github.io/first-project-workAR/"
+                title_ar="الحواس الخمس" title_en="The Five Senses" category_ar="العلوم" category_en="Science">
+                <div class="card-control">
+                  <i class="fa-solid fa-expand fullScreenBtn"></i>
+                  <i class="fa-regular fa-square-plus addBtn"></i>
+                </div>
+                <div class="card-images book-worksheet11">
+
+                  <img src="https://www.manhal.com/platform/media/23030/thumbnail_small.jpg" class="w-100 h-100"
+                    title="الحواس الخمس">
+                </div>
+                <h5 class="card-title card-block mt-3 mb-3">
+                  <span>الحواس الخمس</span>
+                </h5>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-item-container">
+
+              <div class="card" type="all" src-attr="https://kh1aled.github.io/first-project-workAR/"
+                title_ar="الحواس الخمس" title_en="The Five Senses" category_ar="العلوم" category_en="Science">
+                <div class="card-control">
+                  <i class="fa-solid fa-expand fullScreenBtn"></i>
+                  <i class="fa-regular fa-square-plus addBtn"></i>
+                </div>
+                <div class="card-images book-worksheet11">
+
+                  <img src="https://www.manhal.com/platform/media/23030/thumbnail_small.jpg" class="w-100 h-100"
+                    title="الحواس الخمس">
+                </div>
+                <h5 class="card-title card-block mt-3 mb-3">
+                  <span>الحواس الخمس</span>
+                </h5>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-item-container">
+
+              <div class="card" type="all" src-attr="https://kh1aled.github.io/first-project-workAR/"
+                title_ar="الحواس الخمس" title_en="The Five Senses" category_ar="العلوم" category_en="Science">
+                <div class="card-control">
+                  <i class="fa-solid fa-expand fullScreenBtn"></i>
+                  <i class="fa-regular fa-square-plus addBtn"></i>
+                </div>
+                <div class="card-images book-worksheet11">
+
+                  <img src="https://www.manhal.com/platform/media/23030/thumbnail_small.jpg" class="w-100 h-100"
+                    title="الحواس الخمس">
+                </div>
+                <h5 class="card-title card-block mt-3 mb-3">
+                  <span>الحواس الخمس</span>
+                </h5>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-item-container">
+
+              <div class="card" type="all" src-attr="https://kh1aled.github.io/first-project-workAR/"
+                title_ar="الحواس الخمس" title_en="The Five Senses" category_ar="العلوم" category_en="Science">
+                <div class="card-control">
+                  <i class="fa-solid fa-expand fullScreenBtn"></i>
+                  <i class="fa-regular fa-square-plus addBtn"></i>
+                </div>
+                <div class="card-images book-worksheet11">
+
+                  <img src="https://www.manhal.com/platform/media/23030/thumbnail_small.jpg" class="w-100 h-100"
+                    title="الحواس الخمس">
+                </div>
+                <h5 class="card-title card-block mt-3 mb-3">
+                  <span>الحواس الخمس</span>
+                </h5>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card-item-container">
+
+              <div class="card" type="all" src-attr="https://kh1aled.github.io/first-project-workAR/"
+                title_ar="الحواس الخمس" title_en="The Five Senses" category_ar="العلوم" category_en="Science">
+                <div class="card-control">
+                  <i class="fa-solid fa-expand fullScreenBtn"></i>
+                  <i class="fa-regular fa-square-plus addBtn"></i>
+                </div>
+                <div class="card-images book-worksheet11">
+
+                  <img src="https://www.manhal.com/platform/media/23030/thumbnail_small.jpg" class="w-100 h-100"
+                    title="الحواس الخمس">
+                </div>
+                <h5 class="card-title card-block mt-3 mb-3">
+                  <span>الحواس الخمس</span>
+                </h5>
+              </div>
+
+            </div>
+            
+           
+            
+           
+            
+            
+            
+          </div>
+
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-4">
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate_1 pull-right">
+                  <ul class="pagination" role="navigation">
+
+                    <li class="page-item disabled" aria-disabled="true" aria-label="« السابق">
+                      <span class="page-link" aria-hidden="true">‹</span>
+                    </li>
+                    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                    <li class="page-item"><a class="page-link" href="/?page=2">2</a></li>
+                    <li class="page-item"><a class="page-link" href="/?page=3">3</a></li>
+                    <li class="page-item"><a class="page-link" href="/?page=4">4</a></li>
+                    <li class="page-item"><a class="page-link" href="/?page=5">5</a></li>
+                    <li class="page-item"><a class="page-link" href="/?page=6">6</a></li>
+                    <li class="page-item"><a class="page-link" href="/?page=7">7</a></li>
+                    <li class="page-item"><a class="page-link" href="/?page=8">8</a></li>
+
+                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+
+
+
+
+
+                    <li class="page-item"><a class="page-link" href="/?page=558">558</a></li>
+                    <li class="page-item"><a class="page-link" href="/?page=559">559</a></li>
+
+
+                    <li class="page-item">
+                      <a class="page-link" href="/?page=2" rel="next" aria-label="التالي »">›</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+             
+              <div class="col-sm-5 text-end">
+                <a class="btn btn-success waves-effect back_add_media m-b-10">رجوع</a>
+                <a class="btn btn-success waves-effect btn_goto_upload_media float-left m-b-10"
+                  style="display:none">تحميل الوسائط</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ckeditor">
+        <div class="header">
+          <i class="fa-solid fa-xmark "></i>
+        </div>
+        <div class="body position-relative">
+
+        <div id="editor"></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-t-15 padding-0">
+          <div class="form-group m-b-10" style="margin-bottom: 10px">
+                  <div class="float-end">
+                          <input id="Media_for_teacher" type="checkbox" name="Media_for_teacher" class="filled-in">
+                          <label for="Media_for_teacher" class="float-left">وسائط تظهر للمعلم</label>
+                  </div>
+          </div>
+          <div class="control d-flex justify-content-between align-items-center">
+            <a class="btn  btn-success waves-effect btn_save_rich_box ">حفظ</a>
+            <a class="btn backBtn btn-success waves-effect back_add_media  ">رجوع</a>
+          </div>
+        </div>
+        
+        <!-- تحتوي هذه العلامة على السكريبت لتهيئة CKEditor -->
+        <script>
+          ClassicEditor
+              .create( document.querySelector( '#editor' ) )
+              .catch( error => {
+                  console.error( error );
+              } );
+      </script>
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  </script>
+  <script src="./JS/script.js?12sssad" defer class="script"></script>
+</body>
+
+</html>
